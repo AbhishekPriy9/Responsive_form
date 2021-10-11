@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: cyan;
+            font-family: 'Noto Sans Display', sans-serif;
+        }
+
+        .main {
+            height: 600px;
+            width: 500px;
+            background-color: cyan;
+            margin: auto;
+            margin-top: 67px;
+            border-radius: 15px;
+            text-align: center;
+            padding-top: 20px;
+            box-shadow: rgba(0, 0, 255, 0.8) 0px 10px 36px 0px, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+        }
+
+        #heading {
+            color: green;
+            letter-spacing: 1px;
+        }
+
+        input {
+            border: none;
+            background-color: cyan;
+            border-bottom: 1px solid blue;
+            border-radius: 10px;
+            width: 190px;
+        }
+
+        input:hover{
+            border: 1px solid red;
+        }
+
+        button {
+            padding: 5px 20px;
+            cursor: pointer;
+            background-color: cyan;
+            color: darkgreen;
+            border-radius: 10px;
+        }
+        
+        button:hover{
+            background-color: cadetblue;
+            color: white;
+        }
+
+        @media screen and (max-width: 580px) {
+            .main{
+                height: 80vh;
+                width: 80vw;
+                margin-top: 50px;
+            }
+            #heading{
+                font-size: 20px;
+                letter-spacing: 1px;
+            }
+            button{
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2 id="heading">Student Registration Form</h2>
+        <br>
+        <label for="name">Name</label><br>
+        <input type="text" name="name" id="name">
+        <br><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email">
+        <br><br>
+        <label for="class">Class</label><br>
+        <input type="number" name="class" id="class">
+        <br><br>
+        <label for="marks">Marks</label><br>
+        <input type="number" name="marks" id="marks">
+        <br><br>
+        <label for="rnumber">Roll Number</label><br>
+        <input type="number" name="rnumber" id="rnumber">
+        <br><br><br>
+        <button type="submit">Submit</button>
+    </div>
+</body>
+</html>
